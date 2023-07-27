@@ -1,0 +1,23 @@
+body{
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: 100%;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.container .square {
+    width: 100%;
+    flex: 1 1 auto;
+    
+
+}
