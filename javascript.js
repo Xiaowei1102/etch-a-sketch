@@ -13,3 +13,11 @@ divs.forEach(div => {
         div.appendChild(square);
     }
 })
+
+//add evetlistener for each element when the mouse is hovering over
+const squares = document.querySelectorAll('.square');
+squares.forEach(square => square.addEventListener(
+    'mouseenter', 
+    (e) => {
+        e.target.style.backgroundColor = 'purple';
+    }));
