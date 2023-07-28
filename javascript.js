@@ -23,7 +23,11 @@ function sketch() {
     squares.forEach(square => square.addEventListener(
     'mouseenter', 
     (e) => {
-        e.target.style.backgroundColor = 'purple';
+        //randomize the color instead of purple
+        let red = Math.floor(Math.random() * 255);
+        let green = Math.floor(Math.random() * 255);
+        let black = Math.floor(Math.random() * 255);
+        e.target.style.backgroundColor = `rgb(${red}, ${green}, ${black})`;
     }));
 }
 
